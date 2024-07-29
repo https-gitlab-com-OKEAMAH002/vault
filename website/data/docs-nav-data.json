@@ -376,7 +376,7 @@
           },
           {
             "title": "TCP",
-            "routes": [  
+            "routes": [
               {
                 "title": "Overview",
                 "path": "configuration/listener/tcp"
@@ -412,9 +412,9 @@
           {
             "title": "High Availability",
             "badge": {
-              "text": "ENTERPRISE | BETA",
+              "text": "ENTERPRISE",
               "type": "outlined",
-              "color": "highlight"
+              "color": "neutral"
             },
             "path": "configuration/seal/seal-ha"
           },
@@ -1101,6 +1101,19 @@
           {
             "title": "<code>import</code> and <code>import-version</code>",
             "path": "commands/transit/import"
+          }
+        ]
+      },
+      {
+        "title": "<code>transform</code>",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "commands/transform"
+          },
+          {
+            "title": "<code>import</code> and <code>import-version</code>",
+            "path": "commands/transform/import"
           }
         ]
       },
@@ -2195,8 +2208,12 @@
                         "path": "platform/k8s/vso/sources/vault"
                       },
                       {
-                        "title": "Auth Methods",
+                        "title": "Authentication",
                         "routes": [
+                          {
+                            "title": "Overview",
+                            "path": "platform/k8s/vso/sources/vault/auth"
+                          },
                           {
                             "title": "AWS",
                             "path": "platform/k8s/vso/sources/vault/auth/aws"
@@ -2210,6 +2227,10 @@
                       {
                         "title": "Encrypted client cache",
                         "path": "platform/k8s/vso/sources/vault/client-cache"
+                      },
+                      {
+                        "title": "Instant updates",
+                        "path": "platform/k8s/vso/sources/vault/instant-updates"
                       }
                     ]
                   },
@@ -2324,6 +2345,10 @@
       {
         "title": "Upgrade to Raft WAL",
         "path": "upgrading/raft-wal"
+      },
+      {
+        "title": "Upgrade to 1.18.x",
+        "path": "upgrading/upgrade-to-1.18.x"
       },
       {
         "title": "Upgrade to 1.17.x",
@@ -2586,6 +2611,10 @@
         "path": "release-notes"
       },
       {
+        "title": "1.17.0",
+        "path": "release-notes/1.17.0"
+      },
+      {
         "title": "1.16.1",
         "path": "release-notes/1.16.1"
       },
@@ -2845,6 +2874,10 @@
       {
         "title": "Audit",
         "routes": [
+          {
+            "title": "Audit Exclusion",
+            "path": "enterprise/audit/exclusion"
+          },
           {
             "title": "Audit Filtering",
             "path": "enterprise/audit/filtering"
